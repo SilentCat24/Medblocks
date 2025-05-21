@@ -1,12 +1,11 @@
 import { PGlite } from "https://cdn.jsdelivr.net/npm/@electric-sql/pglite/dist/index.js"
 
+const db = new PGlite('idb://patients')
 
 
 
-async function setUpDb(){
-  const db = new PGlite('idb://patients');
 
-  await db.exec(`
+await db.exec(`
   CREATE TABLE IF NOT EXISTS PATIENTS (
     personId SERIAL PRIMARY KEY,
     Name TEXT,
@@ -16,7 +15,7 @@ async function setUpDb(){
   );  
 `);
 
-}
+
 
 
 
