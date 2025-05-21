@@ -3,7 +3,7 @@ import { PGlite } from "https://cdn.jsdelivr.net/npm/@electric-sql/pglite/dist/i
 
 
 
-async function db(){
+async function setUpDb(){
   const db = new PGlite('idb://patients');
 
   await db.exec(`
