@@ -1,0 +1,7 @@
+/* 
+  Cross-Origin loading for WASM and JS
+  Force correct MIME types
+*/
+
+*.js    Content-Type: application/javascript
+*.wasm  Content-Type: application/wasm
