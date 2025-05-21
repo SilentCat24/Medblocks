@@ -1,0 +1,19 @@
+.thStyle{
+border: 1px solid black;
+padding: 10px;
+background-color: #f0f0f0
+}
+
+.tdStyle{
+  border: 1px solid #5b5959;
+  padding: 10px;
+  text-align: center;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0E34A0;
+  
+}
